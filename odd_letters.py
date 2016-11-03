@@ -7,7 +7,7 @@ Problem:
     every other letter from a piece of text, starting with
     the second character.
 
-    For example: 'harmonise' -> 'hrose'
+    For example: 'harmonise' -> 'hroie'
 
     Maybe making sense of it isn't so easy after all!
 
@@ -16,7 +16,7 @@ Problem:
 Tests:
 
     >>> reduce('harmonise')
-    hrose
+    hroie
     >>> reduce('diplodocus')
     dpoou
     >>> reduce('tyrannosaurus')
