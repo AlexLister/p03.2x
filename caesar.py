@@ -43,8 +43,40 @@ def run_tests():
 
 # Edit this code:
 def encode(text, n):
+    pos = 0
+    order = 0
+    newword = "" 
+    length = len(text)
+    for letter in range (length):
+        pos = text[letter]
+        if pos == " ":
+            newword = newword + pos 
+        else:
+            order = ord(pos) + n
+            if order > 90:
+                order = (ord(pos) + n) - 26
+            newletters = chr(order)
+            newword = newword + newletters
 
-
-
+    print(newword)
+    
 def decode(text, n):
+    pos = 0
+    order = 0
+    newword = "" 
+    length = len(text)
+    for letter in range (length):
+        pos = text[letter]
+        if pos == " ":
+            newword = newword + pos 
+        else:
+            order = ord(pos) - n
+            if order < 65:
+                order = (ord(pos) - n) + 26
+            newletters = chr(order)
+            newword = newword + newletters
+
+    print(newword)
+
+            
 
